@@ -1,0 +1,11 @@
+{
+  "files": {
+    "main.css": "/frontend-trend/static/css/main.eb4b1bd8.css",
+    "main.js": "/frontend-trend/static/js/main.09b2b5a8.js",
+    "index.html": "/frontend-trend/index.html"
+  },
+  "entrypoints": [
+    "static/css/main.eb4b1bd8.css",
+    "static/js/main.09b2b5a8.js"
+  ]
+}
