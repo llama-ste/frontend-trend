@@ -27,7 +27,8 @@ const Header = () => {
       </h3>
       <div
         style={{
-          width: "600px",
+          width: "100%",
+          maxWidth: "600px",
           display: "flex",
           justifyContent: "end",
           paddingTop: "15px",
@@ -64,8 +65,7 @@ const StyledHeaderBox = styled.div`
   align-items: center;
   flex-direction: column;
   width: 100%;
-  overflow: scroll;
-  white-space: nowrap;
+  text-align: center;
 `;
 
 const StyledSpan = styled.span`
