@@ -1,11 +1,11 @@
 {
   "files": {
     "main.css": "/frontend-trend/static/css/main.eb4b1bd8.css",
-    "main.js": "/frontend-trend/static/js/main.38240ddf.js",
+    "main.js": "/frontend-trend/static/js/main.3b1cde30.js",
     "index.html": "/frontend-trend/index.html"
   },
   "entrypoints": [
     "static/css/main.eb4b1bd8.css",
-    "static/js/main.38240ddf.js"
+    "static/js/main.3b1cde30.js"
   ]
 }
