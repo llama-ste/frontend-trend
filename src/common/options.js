@@ -6,7 +6,7 @@ export const frontLabelObj = {
   isReactAndAngular: "React & Angular",
   isVueAndAngular: "Vue & Angular",
   isAll: "React & Vue & Angular",
-  "Total Company": "Total Company",
+  Total: "Total",
 };
 
 export const skillColorObj = {

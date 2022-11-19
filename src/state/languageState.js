@@ -9,24 +9,24 @@ export const textState = atom({
   key: "textState",
   default: {
     english: {
-      title: "New Frontend Developer Skill Preference by Company",
-      subTitle: "with.Wanted (Korea job site)",
-      // frontTitle: "Frontend framework preference by company",
+      title: "The stats for newbie frontend developers in South Korea",
+      subTitle: "All of stats based on wanted.co.kr",
       frontTitle: "React, Vue, Angular 🤔",
       frontSubTitle:
-        "What frameworks do companies prefer these days? Check out the results below!",
-      topTenTitle: "Top 10 most matched skill in job openings",
-      topTenSubTitle: "This is the result filtered by new frontend developer.",
+        "How the company does require three of most popular framework/library? \nFollowing is based on 120 of job position requires at least one of these skills.",
+      topTenTitle: "The most mentioned tech stack🔥",
+      topTenSubTitle:
+        "What of tech stack mostly mentioned on the job description? \nFollowing is based on 274 of frontend developer job positions.",
     },
     korean: {
-      title: "회사별 신입 프론트엔드 개발자 기술 선호도",
-      subTitle: "with.원티드",
-      // frontTitle: "회사별 프론트엔드 프레임워크 선호도",
+      title: "국내 신입 프론트엔드 개발자를 위한 통계",
+      subTitle: "wanted.co.kr에 기반하여 집계됨",
       frontTitle: "React, Vue, Angular 🤔",
       frontSubTitle:
-        "요즘 회사들은 어떤 프레임워크를 선호할까? 아래의 결과로 확인해보세요!",
-      topTenTitle: "채용공고에서 가장 많이 매칭된 기술 Top 10",
-      topTenSubTitle: "신입 프론트엔드 개발자로 필터된 결과입니다.",
+        "채용공고에서는 위의 3가지 기술이 얼마나 언급되고 있을까요? \n아래의 결과는 이 기술을 언급한 채용공고 120개를 분석한 결과입니다.",
+      topTenTitle: "가장 많이 언급된 기술스택🔥",
+      topTenSubTitle:
+        "어떤 기술이 채용 공고에 가장 많이 언급되고 있을까요? \n아래의 결과는 프론트엔드 개발자 채용공고 274개를 분석한 결과입니다.",
     },
   },
 });
