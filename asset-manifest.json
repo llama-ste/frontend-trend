@@ -1,11 +1,11 @@
 {
   "files": {
-    "main.css": "/frontend-trend/static/css/main.eb4b1bd8.css",
-    "main.js": "/frontend-trend/static/js/main.369e9cc3.js",
-    "index.html": "/frontend-trend/index.html"
+    "main.css": "/newbie-FE-stats/static/css/main.eb4b1bd8.css",
+    "main.js": "/newbie-FE-stats/static/js/main.55eb0b69.js",
+    "index.html": "/newbie-FE-stats/index.html"
   },
   "entrypoints": [
     "static/css/main.eb4b1bd8.css",
-    "static/js/main.369e9cc3.js"
+    "static/js/main.55eb0b69.js"
   ]
 }
