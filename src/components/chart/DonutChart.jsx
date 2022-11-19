@@ -1,7 +1,7 @@
 import Chart from "react-apexcharts";
 import { frontLabelObj } from "../../common/options";
 
-const DonutChart = ({ labels, series, title = "", subTitle = "" }) => {
+const DonutChart = ({ labels, series }) => {
   const chartOptions = {
     chart: {
       type: "donut",
@@ -19,9 +19,10 @@ const DonutChart = ({ labels, series, title = "", subTitle = "" }) => {
     stroke: { show: true, width: 3, colors: ["#27282c"] },
     legend: {
       show: true,
-      width: 200,
-      offsetY: 85,
-      offsetX: -20,
+      width: 210,
+      offsetY: 20,
+      offsetX: -30,
+      fontSize: "14px",
       labels: {
         colors: "#ffffff",
       },
@@ -37,31 +38,12 @@ const DonutChart = ({ labels, series, title = "", subTitle = "" }) => {
         }) `;
       },
     },
-    title: {
-      text: title,
-      align: "left",
-      margin: 30,
-      style: {
-        fontSize: "20px",
-        color: "#ffffff",
-      },
-    },
-    subtitle: {
-      text: subTitle,
-      floating: true,
-      offsetY: 40,
-      style: {
-        color: "#fff",
-        fontSize: "14px",
-        fontWeight: "bold",
-      },
-    },
     plotOptions: {
       pie: {
         dataLabels: {
           minAngleToShowLabel: 9,
         },
-        offsetY: 20,
+        offsetY: 10,
         donut: {
           labels: {
             show: true,
@@ -70,7 +52,7 @@ const DonutChart = ({ labels, series, title = "", subTitle = "" }) => {
               color: "#ff6633",
               fontSize: "22px",
               fontWeight: "bold",
-              label: "Total Company",
+              label: "Total",
             },
             name: {
               color: "#ff6633",
@@ -90,6 +72,9 @@ const DonutChart = ({ labels, series, title = "", subTitle = "" }) => {
     dataLabels: {
       formatter(value, options) {
         return value.toFixed(1) + "%";
+      },
+      style: {
+        fontSize: "13px",
       },
     },
     tooltip: {

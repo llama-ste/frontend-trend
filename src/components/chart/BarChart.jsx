@@ -1,9 +1,10 @@
 import Chart from "react-apexcharts";
 
-const BarChart = ({ series, labels, title, subTitle = "" }) => {
+const BarChart = ({ series, labels }) => {
   const newSeries = [{ data: series }];
   const chartOptions = {
     chart: {
+      offsetY: -10,
       type: "bar",
       height: 420,
       toolbar: {
@@ -22,13 +23,12 @@ const BarChart = ({ series, labels, title, subTitle = "" }) => {
     dataLabels: {
       enabled: true,
       textAnchor: "start",
-      style: { color: "#fff" },
+      style: { color: "#fff", fontSize: "13px" },
       formatter: function (value, options) {
         return `${options.dataPointIndex + 1}. ${
           options.w.globals.labels[options.dataPointIndex]
         } (${value})`;
       },
-      offsetX: 0,
       dropShadow: { enabled: true },
     },
     stroke: { show: false },
@@ -39,24 +39,6 @@ const BarChart = ({ series, labels, title, subTitle = "" }) => {
     },
     yaxis: {
       labels: { show: false },
-    },
-    title: {
-      text: title,
-      align: "left",
-      style: {
-        fontSize: "18px",
-        color: "#ffffff",
-      },
-      offsetY: 10,
-    },
-    subtitle: {
-      text: subTitle,
-      offsetY: 40,
-      style: {
-        color: "#fff",
-        fontSize: "14px",
-        fontWeight: "bold",
-      },
     },
     tooltip: {
       theme: "dark",

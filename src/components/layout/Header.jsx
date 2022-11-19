@@ -31,7 +31,8 @@ const Header = () => {
           maxWidth: "600px",
           display: "flex",
           justifyContent: "end",
-          paddingTop: "15px",
+          alignItems: "center",
+          margin: "16px 0px",
         }}
       >
         <StyledSpan
@@ -56,7 +57,7 @@ const Header = () => {
 export default Header;
 
 const StyledHeaderBox = styled.div`
-  height: 120px;
+  min-height: 120px;
   padding-top: 20px;
   list-style: none;
   display: flex;
@@ -69,23 +70,24 @@ const StyledHeaderBox = styled.div`
 `;
 
 const StyledSpan = styled.span`
-  background: ${({ currLanguage, defaultLanguage }) =>
-    currLanguage === defaultLanguage ? "rgb(255, 102, 51)" : "#fff"};
-  display: block;
-  border-radius: ${({ defaultLanguage }) =>
-    defaultLanguage === "english" ? "4px 0 0 4px" : "0 4px 4px 0"};
-  cursor: pointer;
-  padding: 5px 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 85px;
+  height: 29px;
+  font-weight: bold;
   letter-spacing: 0.5px;
+  border: 1px solid #fff;
+  background: ${({ currLanguage, defaultLanguage }) =>
+    currLanguage === defaultLanguage ? "#ff6633" : "#fff"};
+  border-radius: ${({ defaultLanguage }) =>
+    defaultLanguage === "english" ? "4px 0px 0px 4px" : "0px 4px 4px 0px"};
   color: ${({ currLanguage, defaultLanguage }) =>
     currLanguage === defaultLanguage ? "#fff" : "#525356"};
-  text-align: center;
+  cursor: pointer;
   transition: background-color 0.1s ease;
-  font-weight: bold;
   :hover {
     background: ${({ currLanguage, defaultLanguage }) =>
-      currLanguage === defaultLanguage
-        ? "rgb(235, 90, 40)"
-        : "rgb(233, 233, 233)"};
+      currLanguage === defaultLanguage ? "#eb5a28" : "#e9e9e9"};
   }
 `;
