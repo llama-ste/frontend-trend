@@ -1,4 +1,4 @@
-# [국내 신입 프론트엔드 개발자를 위한 통계](https://llama-ste.github.io/frontend-trend/)
+# [국내 신입 프론트엔드 개발자를 위한 통계](https://llama-ste.github.io/newbie-FE-stats/)
 원티드에서 신입 프론프엔드 개발자 채용공고에 가장 많이 언급된 기술을 보여주는 페이지
 
 <br>
